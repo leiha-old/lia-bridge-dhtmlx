@@ -2,7 +2,7 @@
 
 namespace Lia\Bridge\DhtmlxBundle\DependencyInjection\Asset;
 
-use Lia\Kernel\ThemeBundle\Core\PluginInterface;
+use Lia\ThemeBundle\Core\PluginInterface;
 
 class GenericPlugin
     implements PluginInterface

@@ -2,7 +2,7 @@
 
 namespace Lia\Bridge\DhtmlxBundle\DependencyInjection;
 
-use Lia\Kernel\ThemeBundle\Core\SubscriberWithPluginsBase;
+use Lia\ThemeBundle\Core\SubscriberWithPluginsBase;
 
 class ThemeSubscriberService
     extends SubscriberWithPluginsBase
