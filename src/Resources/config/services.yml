@@ -1,0 +1,14 @@
+parameters:
+    lia.subscriber.theme.dhtmlx.class: Lia\Bridge\DhtmlxBundle\DependencyInjection\ThemeSubscriberService
+    lia.factory.dhtmlx.grid.class: Lia\Bridge\DhtmlxBundle\Grid\FactoryService
+
+
+services:
+    lia.factory.dhtmlx.grid:
+        class: %lia.factory.dhtmlx.grid.class%
+        arguments: [@service_container]
+    lia.subscriber.theme.dhtmlx:
+        class: %lia.subscriber.theme.dhtmlx.class%
+        arguments: [@service_container]
+        tags:
+            - { name: lia.service.theme }
