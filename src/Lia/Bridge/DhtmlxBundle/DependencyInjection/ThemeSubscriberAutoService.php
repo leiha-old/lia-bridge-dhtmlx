@@ -4,17 +4,9 @@ namespace Lia\Bridge\DhtmlxBundle\DependencyInjection;
 
 use Lia\ThemeBundle\Core\SubscriberWithPluginsBase;
 
-class ThemeSubscriberService
+class ThemeSubscriberAutoService
     extends SubscriberWithPluginsBase
 {
-    /**
-     * @return string
-     */
-    public function getPathOfAsset()
-    {
-        return '/bundles/liabridgedhtmlx/';
-    }
-
     /**
      * Contains available plugins for the dhtmlx library
      * if the value of item in this array is true then a custom class must be created
