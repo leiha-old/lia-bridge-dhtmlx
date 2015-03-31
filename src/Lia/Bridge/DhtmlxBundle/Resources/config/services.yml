@@ -5,4 +5,5 @@ parameters:
 services:
     lia.factory.dhtmlx.grid:
         class: %lia.factory.dhtmlx.grid.class%
-        arguments: [@service_container]
+        calls:
+            - ['setContainer', [@service_container]]
